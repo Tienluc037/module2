@@ -6,18 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
-<style type="text/css">
+
+<style>
     .login {
-        height:180px; width:230px;
+        height:180px; width:280px;
         margin:auto;
-        padding:50px;
+        padding:10px;
         border:1px #CCC solid;
     }
     .login input {
-        padding:5px; margin:5px
+        padding:5px;
+        margin:5px;
+    }
+    h2 {
+        text-align: left;
     }
     </style>
+</head>
 <body>
 <form>
     <div class="login">
@@ -40,6 +45,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 </body>
 </html>
