@@ -29,7 +29,9 @@ $people = loadData();
     }
 </style>
 <body>
-<a href="create.php">Next</a>
+    <a href="create.php">ADD</a> <br>
+    <a href="Search.php">SEARCH</a> <br>
+    <a href="sort.php">SORT</a>
     <table>
         <tr>
             <th>name</th>
@@ -42,8 +44,7 @@ $people = loadData();
         <tr>
             <td><?php echo $value["name"] ?></td>
             <td><?php echo $value["age"] ?></td>
-            <td><a href="delete.php?id=<?php echo $key?>">Delete</a>
-            </td>
+            <td><a href="delete.php?id=<?php echo $key?>">Delete</a></td>
         </tr>
         <?php endforeach;
         }?>
