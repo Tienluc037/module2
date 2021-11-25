@@ -1,5 +1,6 @@
 <?php
 include_once "data.php";
+include_once "people.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,16 +13,14 @@ include_once "data.php";
 </head>
 <body>
 <form action="" method="post">
-    <input type="text" name="name" placeholder="name">
-    <input type="text" name="age" placeholder="age">
-    <input type="text" name="address" placeholder="address">
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="age" placeholder="Age">
     <button type="submit">ADD</button>
 </form>
-
 </body>
 </html>
 <?php
-if ( $_SERVER["REQUEST_METHOD"]== "POST") {
-    addNewArr($_REQUEST);
-    header("location:findMin.php");
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    addNewPeople($_REQUEST);
+    header("location:index.php");
 }
